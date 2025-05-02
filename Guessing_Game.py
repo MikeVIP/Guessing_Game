@@ -1,6 +1,6 @@
 # Author: Mateusz B.
 # Name: Guessing Game
-# Version: v0.01
+# Version: v0.02
 
 
 # Polski: Importowanie biblioteki random
@@ -11,25 +11,12 @@ import random as rnd
 liczba_1 = 1
 liczba_2 = 200
 
-# Polski: Języki w słowniku
-# Deutsch: Sprachen im Wörterbuch
-# English: Languages in the dictionary
-#jezyki = {
-#    'pl': {
-#        
-#    },
-#}
-
-# Polski: Sprawdzenie, czy język jest obsługiwany
-# Deutsch: Überprüfung, ob die Sprache unterstützt wird
-# English: Checking if the language is supported
-#if jezyk not in jezyki:
-#    jezyk = 'pl'
-
 # Polski: Powitanie
 # Deutsch: Begrüßung
 # English: Greeting
 print("Willkommen zum 'Guessing Game'!")
+
+nick = input("Gib bitte deinen Namen oder Nickname an: ")
 
 # Polski: Pętla programu
 # Deutsch: Programmschleife
@@ -48,7 +35,7 @@ while True:
     # Polski: Informacja o zakresie liczb
     # Deutsch: Information über den Zahlenbereich
     # English: Information about the number range
-    print(f"Ich habe eine Zahl zwischen {liczba_1} und {liczba_2} ausgewählt. Versuche sie zu erraten.")
+    print(f"Ich habe eine Zahl zwischen {liczba_1} und {liczba_2} ausgewählt. Errätst du diese Zahl, {nick}?")
 
     # Polski: Pętla gry
     # Deutsch: Spielschleife
@@ -79,7 +66,7 @@ while True:
     # Polski: Pytanie, czy użytkownik chce grać ponownie czy wyjść
     # Deutsch: Frage, ob der Benutzer erneut spielen oder beenden möchte
     # English: Asking if the user wants to play again or exit
-    pytanie = input("Möchtest du noch einmal spielen? (ja): ").lower()
+    pytanie = input(f"{nick}, willst du noch einmal spielen? (ja): ").lower()
     if pytanie != 'ja':
         print("Danke fürs Spielen! Auf Wiedersehen!")
         # exit
