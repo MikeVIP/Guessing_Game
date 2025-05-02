@@ -16,6 +16,9 @@ liczba_2 = 200
 # English: Greeting
 print("Willkommen zum 'Guessing Game'!")
 
+# Polski: Zadanie pytania o imię / nick
+# Deutsch: Abfrage nach dem Namen / Spitznamen
+# English: Asking for name / nickname
 nick = input("Gib bitte deinen Namen oder Nickname an: ")
 
 # Polski: Pętla programu
