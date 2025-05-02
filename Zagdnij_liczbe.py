@@ -64,7 +64,7 @@ while True:
         print(f"Czy to {zagdnij_py}?")
 
         if zagdnij == zagdnij_py:
-            print(f"Zgadłem w {proby} próbach!")
+            print(f"Zgadłem liczbę {zagdnij} w {proby} próbach!")
             break
 
         czy_trafil = input("Odpowiedź (- / +): ")
